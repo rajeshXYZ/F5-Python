@@ -20,7 +20,7 @@ def find_unit_state():
 #Function to open the a file which contains pool info pasted from ticket and then get you the tmsh command list for you to verify and then copy 
 #and paste. This hopefully should save you time
 def list_tmsh_cmd():
-  myfile = open("RC_VLAN_PRUNE_TICKET.txt","r")
+  myfile = open("f5pools.txt","r")
   print "*** LISTING THE COMMAND TO DELETE THE POOL MEMBERS LISTED IN THE FILE ***\n"
   for eachline in myfile:
     fields = eachline.replace(',','')
